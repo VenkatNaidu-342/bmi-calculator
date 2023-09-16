@@ -22,3 +22,13 @@ function determineCategory(bmi) {
     if (bmi >= 25 && bmi < 29.9) return 'Overweight';
     return 'Obese';
 }
+
+function reset() {
+  var weightInput = document.getElementById("weight");
+  var heightInput = document.getElementById("height");
+  var result = document.getElementById("result");
+
+  weightInput.value = "";
+  heightInput.value = "";
+  result.textContent = "";
+}
